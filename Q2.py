@@ -8,6 +8,7 @@ contador6 = 0
 premiacao = 1711
 somaValor = 0
 clienteMenos = 0
+cliente6PRI =0
 
 
 print("valor tent1 tent2 total qmais qsetor6 premio")
@@ -22,12 +23,14 @@ while(ganho <= 1711):
         contadorPromo += 1
 
         if(dado == 6 and dado2 != 6):
+            cliente6PRI += 1
             ganho += 617
             ganhoRodada += 617
             contador6 = contador6 + 1
         if(dado2 == 6 and dado != 6):
           contador6 = contador6 + 1
         elif(dado == 6 and dado2 == 6):
+          cliente6PRI += 1
           contador6 = contador6 + 1
         if(dado + dado2 >= 11):
             ganho += 1088
@@ -58,4 +61,4 @@ print("Porcentagem clientes acertaram mais que 11 =   {:.1f}".format(x))
 
 
 
-#print("Premio = 1711\nTotal de participantes = {}\nQuant. clientes gastaram no maximo 296.00 = {}\nClientes acertaram 6 na 1a tent. = {}\nPorcentagem clientes acertaram mais que 11 = {}".format(contadorCliente, clienteMenos, contador6,)
+#print("Premio = 1711\nTotal de participantes = {}\nQuant. clientes gastaram no maximo 296.00 = {}\nClientes acertaram 6 na 1a tent. = {}\nPorcentagem clientes acertaram mais que 11 = {}".format(contadorCliente, clienteMenos, contador6PRI,)
