@@ -21,11 +21,13 @@ while(ganho <= 1711):
         dado2 = int(input())
         contadorPromo += 1
 
-        if(dado == 6):
+        if(dado == 6 and dado2 != 6):
             ganho += 617
             ganhoRodada += 617
             contador6 = contador6 + 1
-        if(dado2 == 6):
+        if(dado2 == 6 and dado != 6):
+          contador6 = contador6 + 1
+        elif(dado == 6 and dado2 == 6):
           contador6 = contador6 + 1
         if(dado + dado2 >= 11):
             ganho += 1088
