@@ -25,7 +25,8 @@ while(ganho <= 1711):
             ganho += 617
             ganhoRodada += 617
             contador6 = contador6 + 1
-
+        if(dado2 == 6):
+          contador6 = contador6 + 1
         if(dado + dado2 >= 11):
             ganho += 1088
             ganhoRodada += 1088
