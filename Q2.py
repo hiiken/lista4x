@@ -11,6 +11,7 @@ clienteMenos = 0
 cliente6PRI =0
 
 
+
 print("valor tent1 tent2 total qmais qsetor6 premio")
 while(ganho <= 1711):
     clienteMenos = 0
@@ -30,6 +31,8 @@ while(ganho <= 1711):
         if(dado2 == 6 and dado != 6):
           contador6 = contador6 + 1
         elif(dado == 6 and dado2 == 6):
+          ganho += 617
+          ganhoRodada += 617
           cliente6PRI += 1
           contador6 = contador6 + 1
         if(dado + dado2 >= 11):
