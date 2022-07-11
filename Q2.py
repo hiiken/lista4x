@@ -59,7 +59,7 @@ x = (contador11/contadorCliente)*100
 print("Premio =   1711")
 print("Total de participantes =   {}".format(contadorCliente))
 print("Quant. clientes gastaram no maximo 296.00 =   {}".format(clienteMenos))
-print("Clientes acertaram 6 na 1a tent. =   {}".format(contador6))
+print("Clientes acertaram 6 na 1a tent. =   {}".format(cliente6PRI)
 print("Porcentagem clientes acertaram mais que 11 =   {:.1f}".format(x))
 
 
